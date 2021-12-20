@@ -11,15 +11,17 @@ body {
 .container {
 	width:20vw;
 	display: block;
+	align-items: center;
+	display: flex;
 }
-td:hover .holium {
+td:hover .show {
 	opacity: 0;
 }
 
 td:hover .hint {
 	opacity: 1;
 }
-.holium, .hint {
+.show, .hint {
 	position:absolute;
 	width:20vw;
 }
@@ -35,14 +37,13 @@ td:hover .hint {
 	text-align: center;
 	transition: opacity 400ms ease-in-out 300ms;
 }
-.holium {
+.show {
 	opacity: 1;
 	transition: opacity 400ms ease-in-out 400ms;
 }
-.center {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	width: 100vw;
-	text-align: center;
+.big {
+	font-size: 20vw;
+}
+.small {
+	font-size: 5vw;
 }
