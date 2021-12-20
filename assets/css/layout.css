@@ -1,0 +1,48 @@
+table {
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body {
+  background: black;
+}
+.container {
+	width:20vw;
+	display: block;
+}
+td:hover .holium {
+	opacity: 0;
+}
+
+td:hover .hint {
+	opacity: 1;
+}
+.holium, .hint {
+	position:absolute;
+	width:20vw;
+}
+
+.orange {
+	color:orange;
+}
+.hint {
+	user-select: none;
+	opacity: 0;
+	color:orange;
+	font-size: 20vw;
+	text-align: center;
+	transition: opacity 400ms ease-in-out 300ms;
+}
+.holium {
+	opacity: 1;
+	transition: opacity 400ms ease-in-out 400ms;
+}
+.center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	width: 100vw;
+	text-align: center;
+}
